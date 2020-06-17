@@ -113,8 +113,7 @@ public class ListNode {
 		}
 	}
 
-	// post: checks whether a linked list is sorted (non-decreasing) and returns
-	// true
+	// post: checks whether a linked list is sorted (non-decreasing) and returns true
 	public boolean isSorted() {
 		if (front == null) {
 			return true;
@@ -130,6 +129,7 @@ public class ListNode {
 		return true;
 	}
 
+	// post: checks whether a linked list has two adjacent numbers and prints the numbers
 	public boolean hasTwoConsecutive() {
 		if(front == null) {
 			return false;

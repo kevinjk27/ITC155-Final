@@ -121,4 +121,44 @@ public class IntTreeNode {
 		}
 	}
 
+	// checks if a binary tree is full or not (has 0 or 2 children only)
+	public boolean isFull() {
+		return isFull(overallRoot);
+	}
+
+	public boolean isFull(IntTreeNode root) {
+		// empty tree & base case
+		if (root == null) {
+			return true;
+		}
+
+		// when node leaf has no child
+		else if (root.left == null && root.right == null) {
+			return true;
+		}
+
+		// when node leaf has both left and right child
+		else if (root.left != null && root.right != null) {
+			//checks the left and right child elements if fails return false
+			return isFull(root.left) && isFull(root.right);
+		}
+		return false;
+
+	}
+
+	
+	public static void main(String[] args) {
+		IntTreeNode sampleTree = new IntTreeNode();
+		overallRoot = sampleTree.add(17);
+		overallRoot = sampleTree.add(14);
+		overallRoot = sampleTree.add(5);
+		overallRoot = sampleTree.add(27);
+		overallRoot = sampleTree.add(31);
+		overallRoot = sampleTree.add(28);
+		overallRoot = sampleTree.add(8);
+		sampleTree.printSideways();
+		System.out.println();
+		System.out.println("The tree is full: "+sampleTree.isFull());
+
+	}
 }
