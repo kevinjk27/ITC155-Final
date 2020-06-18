@@ -1,4 +1,6 @@
-/*
+/* ITC155 Final Assignment Spring 2020
+ * 6/17/2020
+ * 
  * Ch 16 LinkedList  p. 1024 ex. 6 Write a method called hasTwoConsequitive...  50 points (40 code + 10 test)
  *  
  */

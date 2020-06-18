@@ -1,4 +1,6 @@
-/*
+/* ITC155 Final Assignment Spring 2020
+ * 6/17/2020
+ * 
  * Ch 17 Binary Trees p. 1077 ex.7 Write a method isFull... 50 points (40 code + 10 test)
  * 
  */
